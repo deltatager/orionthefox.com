@@ -3,7 +3,7 @@
 
 	let count = 0;
 
-	const displayed_count = spring();
+	const displayed_count = spring(0, { stiffness: 0.05, damping: 0.1, precision: 0.01 });
 	$: displayed_count.set(count);
 	$: offset = modulo($displayed_count, 1);
 
