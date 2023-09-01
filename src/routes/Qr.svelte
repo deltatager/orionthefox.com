@@ -5,10 +5,10 @@
   export let image: string
   export let label: string
   export let dotsOptions: {
-        type?: DotType
-        color?: string
-        gradient?: Gradient
-    }
+    type?: DotType
+    color?: string
+    gradient?: Gradient
+  }
 
   let canvasElement: HTMLElement | undefined
 
@@ -21,14 +21,17 @@
     dotsOptions,
     imageOptions: {
       crossOrigin: 'anonymous',
-      margin: 10,
+      margin: 10
     },
-	cornersSquareOptions: {
-		type: 'extra-rounded'
-	},
-	cornersDotOptions: {
-		type: 'dot'
-	}
+    cornersSquareOptions: {
+      type: 'extra-rounded'
+    },
+    cornersDotOptions: {
+      type: 'dot'
+    },
+    backgroundOptions: {
+      color: '#fff0'
+    }
   }
 
   $: if (typeof window !== 'undefined') {
@@ -37,7 +40,16 @@
   }
 </script>
 
-<div style='margin: 8px; text-align: center'>
-	<div bind:this={canvasElement} />
-	<span>{label}</span>
+<div>
+  <a href={data} target="_blank">
+    <div bind:this={canvasElement} />
+    {label}
+  </a>
 </div>
+
+<style>
+  div {
+    margin: 8px;
+    text-align: center;
+  }
+</style>
