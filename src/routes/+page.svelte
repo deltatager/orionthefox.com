@@ -5,13 +5,15 @@
 
 <svelte:head>
   <title>Orion 🌌🦊</title>
+  <meta name="viewport" content="initial-scale=1, height=device-height, width=device-width" />
   <meta name="description" content="Orion's social media links" />
+  <meta name="thumbnail" content="/src/lib/images/orion.png" />
 </svelte:head>
 
-<section>
-  <a class="img-link" href="https://twitter.com/WeaselDumb" target="_blank">
-    <img id="sticker" src={sticker} alt="Orion wink" width="300" />
-    <span  class="img-credit">by @WeaselDumb</span>
+<section class="img-link">
+  <img src={sticker} alt="Orion wink" width="300" />
+  <a href="https://twitter.com/WeaselDumb" target="_blank">
+    <span class="img-credit">by @WeaselDumb</span>
   </a>
 </section>
 <h1>Orion the Astrology fox</h1>
@@ -67,8 +69,15 @@
 </section>
 
 <style>
-  #sticker {
+  h1 {
+    background: -webkit-linear-gradient(white, #38495a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  img {
     display: block;
+    filter: drop-shadow(0 0 3px #fff);
   }
 
   * {
@@ -84,11 +93,17 @@
 
   .img-link {
     text-align: left;
+    flex-direction: column;
   }
 
-.img-credit {
-  padding-left: 45px;
-}
+  .img-link a {
+    position: relative;
+    left: -60px;
+  }
+
+  .img-credit {
+    padding-left: 45px;
+  }
 
   @media (max-width: 960px) {
     section {

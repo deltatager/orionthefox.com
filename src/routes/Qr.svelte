@@ -1,5 +1,6 @@
 <script lang="ts">
   import QRCodeStyling, { type DotType, type Gradient, type Options } from 'qr-code-styling-new'
+    import { onMount } from 'svelte'
 
   export let data: string
   export let image: string
@@ -34,10 +35,10 @@
     }
   }
 
-  $: if (typeof window !== 'undefined') {
+  onMount(() => {
     const qrCode = new QRCodeStyling(qrOptions)
     qrCode.append(canvasElement)
-  }
+  })
 </script>
 
 <div>

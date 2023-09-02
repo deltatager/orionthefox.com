@@ -1,9 +1,14 @@
 <script>
   import github from '$lib/images/github.svg'
+    import Background from './Background.svelte'
   import './styles.css'
+
+  let offsetHeight = 0
+
 </script>
 
-<div class="app">
+<div class="app" bind:offsetHeight>
+  <Background height={offsetHeight}/>
   <main>
     <slot />
   </main>
@@ -21,10 +26,7 @@
     width: 2em;
     height: 2em;
     object-fit: contain;
-  }
-
-  a:hover {
-    color: var(--color-theme-1);
+    margin-left: 5px;
   }
 
   .app {
