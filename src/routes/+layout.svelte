@@ -1,14 +1,13 @@
 <script>
   import github from '$lib/images/github.svg'
-    import Background from './Background.svelte'
+  import Background from './Background.svelte'
   import './styles.css'
 
   let offsetHeight = 0
-
 </script>
 
 <div class="app" bind:offsetHeight>
-  <Background height={offsetHeight}/>
+  <Background height={offsetHeight} />
   <main>
     <slot />
   </main>

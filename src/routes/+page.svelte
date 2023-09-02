@@ -7,7 +7,9 @@
   <title>Orion 🌌🦊</title>
   <meta name="viewport" content="initial-scale=1, height=device-height, width=device-width" />
   <meta name="description" content="Orion's social media links" />
-  <meta name="thumbnail" content="/src/lib/images/orion.png" />
+  <meta name="thumbnail" content="https://orionthefox.com/_app/immutable/assets/orion.d94da32f.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="https://orionthefox.com/_app/immutable/assets/orion.d94da32f.png" />
 </svelte:head>
 
 <section class="img-link">
