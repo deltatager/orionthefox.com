@@ -8,6 +8,7 @@
 
 <div class="app" bind:offsetHeight>
   <Background height={offsetHeight} />
+  
   <main>
     <slot />
   </main>
@@ -21,13 +22,6 @@
 </div>
 
 <style>
-  img {
-    width: 2em;
-    height: 2em;
-    object-fit: contain;
-    margin-left: 5px;
-  }
-
   .app {
     display: flex;
     flex-direction: column;
@@ -52,9 +46,10 @@
     padding: 12px;
   }
 
-  @media (min-width: 480px) {
-    footer {
-      padding: 12px 0;
-    }
+  footer img {
+    width: 2em;
+    height: 2em;
+    object-fit: contain;
+    margin-left: 5px;
   }
 </style>
