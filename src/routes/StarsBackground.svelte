@@ -1,6 +1,5 @@
 <script lang="ts">
     export let height: number
-    
 </script>
 
 <div class="stars-container" style="--page-height: {height}px">
@@ -12,10 +11,10 @@
 <style>
   @keyframes animStar {
     from {
-      transform: translateY(0px);
+      transform: translateY(0px) translateX(0px);
     }
     to {
-      transform: translateY(-2000px);
+      transform: translateY(-2000px) translateX(-1000px);
     }
   }
 

@@ -1,14 +1,17 @@
 <script>
   import github from '$lib/images/github.svg'
-  import Background from './Background.svelte'
+  import ConstellationBackground from './ConstellationBackground.svelte'
+  import StarsBackground from './StarsBackground.svelte'
   import './styles.css'
 
   let offsetHeight = 0
+  let offsetWidth = 0
 </script>
 
-<div class="app" bind:offsetHeight>
-  <Background height={offsetHeight} />
-  
+<div class="app" bind:offsetHeight bind:offsetWidth>
+  <!-- <StarsBackground height={offsetHeight} /> -->
+  <ConstellationBackground height={offsetHeight} width={offsetWidth} />
+
   <main>
     <slot />
   </main>
