@@ -50,7 +50,7 @@ h1 {
 }
 
 .animate {
-  animation: starFlash 15s linear infinite;
+  animation: starFlash var(--anim-delay) linear infinite;
   box-shadow: 0px 0px 5px #fff;
 }
 

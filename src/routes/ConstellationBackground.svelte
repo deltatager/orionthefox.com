@@ -1,6 +1,7 @@
 <script lang="ts">
   export let height: number
   export let width: number
+  export let animDelaySec: number
 
   const SVG_NS = 'http://www.w3.org/2000/svg'
 
@@ -174,9 +175,9 @@
     let randomDelay = 0
 
     function drawStars() {
-      let allCoords: Element[] = [],
-        n = ViewportX >= 1000 && ViewportY >= 600 ? 40 : 20,
-        n1 = ViewportX >= 1000 && ViewportY >= 600 ? 400 : 200
+      let allCoords: Element[] = []
+      let n = ViewportX >= 1000 && ViewportY >= 600 ? 40 : 20
+      let n1 = ViewportX >= 1000 && ViewportY >= 600 ? 400 : 200
 
       // Stars Loop
       for (var i = 0, stars = 300; i < stars; i++) {
@@ -194,7 +195,7 @@
 
         randomX = +(Math.random() * (ViewportX - 0) + 0).toFixed(2)
         randomY = +(Math.random() * (ViewportY - 0) + 0).toFixed(2)
-        randomDelay = +(Math.random() * (-4 - 2.5) + -4).toFixed(2)
+        randomDelay = +(Math.random() * (animDelaySec * -1)).toFixed(2)
 
         circle.classList.add('animate')
         circle.style.animationDelay = randomDelay + 's'
@@ -265,7 +266,7 @@
   $: main(svg, width, height)
 </script>
 
-<svg bind:this={svg} {width} {height} />
+<svg bind:this={svg} {width} {height} style="--anim-delay: {animDelaySec}s"/>
 
 <style>
   svg {
