@@ -10,7 +10,7 @@
 
 <div class="app" bind:offsetHeight bind:offsetWidth>
   <!-- <StarsBackground height={offsetHeight} /> -->
-  <ConstellationBackground height={offsetHeight} width={offsetWidth} animDelaySec={30}/>
+  <ConstellationBackground height={offsetHeight} width={offsetWidth} animDelaySec={20}/>
 
   <main>
     <slot />
