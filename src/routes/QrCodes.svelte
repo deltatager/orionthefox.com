@@ -13,6 +13,15 @@
     }}
   />
   <QrCode
+  data={'https://twitter.com/orionthefox'}
+  label={'Twitter: @orionthefox'}
+  image={'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/292px-Logo_of_Twitter.svg.png'}
+  dotsOptions={{
+    type: 'rounded',
+    color: '#1d9bf0'
+  }}
+/>
+  <QrCode
     data={'https://www.instagram.com/orion.the.astro.fox'}
     label={'Instagram: @orion.the.astro.fox'}
     image={'https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg'}
@@ -43,9 +52,9 @@
     }}
   />
   <QrCode
-    data={'https://twitter.com/orionthefox'}
-    label={'Twitter: @orionthefox'}
-    image={'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/292px-Logo_of_Twitter.svg.png'}
+    data={'https://bsky.app/profile/orionthefox.bsky.social'}
+    label={'Bluesky: orionthefox.bsky.social'}
+    image={''}
     dotsOptions={{
       type: 'rounded',
       color: '#1d9bf0'
