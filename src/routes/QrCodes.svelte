@@ -52,7 +52,7 @@
     }}
   />
   <QrCode
-    data={'https://bsky.app/profile/orionthefox.bsky.social'}
+    data={'https://bsky.app/profile/orionthefox.com'}
     label={'Bluesky: @orionthefox.com'}
     image={''}
     dotsOptions={{
