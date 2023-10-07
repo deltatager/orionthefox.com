@@ -1,7 +1,6 @@
 <script>
   import github from '$lib/images/github.svg'
   import ConstellationBackground from './ConstellationBackground.svelte'
-  import StarsBackground from './StarsBackground.svelte'
   import './styles.css'
 
   let offsetHeight = 0
