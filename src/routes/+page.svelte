@@ -29,8 +29,7 @@
     }
   ]
 
-  const { src, artist } = stickers[Math.round(Math.random() * stickers.length)]
-
+  const { src, artist } = stickers[Math.round(Math.random() * (stickers.length - 1))]
   const title = 'Orion 🌌🦊'
   const description = "Orion's social media links"
 </script>
