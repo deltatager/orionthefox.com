@@ -54,7 +54,7 @@
   <QrCode
     data={'https://bsky.app/profile/orionthefox.com'}
     label={'Bluesky: @orionthefox.com'}
-    image={'https://raw.githubusercontent.com/bluesky-social/social-app/main/assets/default-avatar.jpg'}
+    image={'https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg'}
     dotsOptions={{
       type: 'rounded',
       color: '#1d9bf0'
