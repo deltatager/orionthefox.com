@@ -18,7 +18,7 @@
   image={'https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png'}
   dotsOptions={{
     type: 'rounded',
-    color: '#fff'
+    color: '#000'
   }}
 />
   <QrCode
