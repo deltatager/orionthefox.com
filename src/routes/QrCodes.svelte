@@ -13,12 +13,12 @@
     }}
   />
   <QrCode
-  data={'https://twitter.com/orionthefox'}
-  label={'Twitter: @orionthefox'}
-  image={'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/292px-Logo_of_Twitter.svg.png'}
+  data={'https://x.com/orionthefox'}
+  label={'X: @orionthefox'}
+  image={'https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png'}
   dotsOptions={{
     type: 'rounded',
-    color: '#1d9bf0'
+    color: '#fff'
   }}
 />
   <QrCode
