@@ -15,7 +15,7 @@
   <QrCode
   data={'https://x.com/orionthefox'}
   label={'X: @orionthefox'}
-  image={'https://commons.wikimedia.org/wiki/File:X-Logo-Round-Color.png#/media/File:X_logo_2023_original.svg'}
+  image={'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/960px-X_logo_2023_original.svg.png'}
   dotsOptions={{
     type: 'rounded',
     color: '#999'
