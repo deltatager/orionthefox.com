@@ -9,15 +9,15 @@
   const stickers = [
     {
       src: sticker0,
-      artist: 'WeaselDumb'
+      artist: 'moonzy.fur (IG)'
     },
     {
       src: sticker1,
-      artist: 'SpaceFoxJupiter'
+      artist: 'garnetstardust.bsky.social'
     },
     {
       src: sticker2,
-      artist: 'SpaceFoxJupiter'
+      artist: 'garnetstardust.bsky.social'
     },
     {
       src: sticker3,
@@ -25,7 +25,7 @@
     },
     {
       src: sticker4,
-      artist: 'Wren_Petrova'
+      artist: 'shilohs_heart_in_art (IG)'
     }
   ]
 
