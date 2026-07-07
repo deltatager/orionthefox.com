@@ -4,15 +4,6 @@
 
 <section>
   <QrCode
-    data={'https://t.me/orionthefox'}
-    label={'Telegram: @orionthefox'}
-    image={'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/128px-Telegram_logo.svg.png'}
-    dotsOptions={{
-      type: 'rounded',
-      color: '#289fd9'
-    }}
-  />
-  <QrCode
   data={'https://x.com/orionthefox'}
   label={'X: @orionthefox'}
   image={'https://upload.wikimedia.org/wikipedia/commons/0/01/X-Logo-Round-Color.png'}
